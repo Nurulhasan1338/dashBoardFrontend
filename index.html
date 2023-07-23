@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cd61a0714d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <div class="row main">
+
+        <!-------------------- side navbar ----------------------------------------------->
+        <div class="d-flex flex-column sidenav ">
+            <div class="d-flex flex-md-column align-items-center">
+
+                <img id="butterfly" src="./assets/butterfly.png" alt="butterfly">
+                <a href="http://"><i class="fa-solid fa-magnifying-glass" style="font-size: 15px;"></i></a>
+
+            </div>
+
+            <div class="d-flex flex-column ">
+                <a href="http://"><i class="fa-solid fa-house" style="font-size: 25px; margin-bottom: 10px;"></i></a>
+                <a href="http://"><i class="fa-regular fa-newspaper"
+                        style="font-size: 25px; margin-bottom: 10px;"></i></a>
+                <a href="http://"><i class="fa-solid fa-list" style="font-size: 25px; margin-bottom: 10px;"></i></i></a>
+                <a href="http://"><i class="fa-solid fa-user" style="font-size: 25px; margin-bottom: 10px;"></i></a>
+            </div>
+            <div class="d-flex flex-column">
+                <a href="http://"><i class="fa-regular fa-bell " style="font-size: 20px;"></i></a>
+                <a href="http://"><i class="fa-solid fa-arrow-right-from-bracket" style="font-size: 20px;"></i></a>
+            </div>
+        </div>
+
+
+        <div class="dashboard">
+            <!---------------------- profile column ------------------------------------->
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="container bg-light mx-3 px-5 py-5">
+                        <div class="card mb-3" style="max-width: 400px;">
+                            <div class="row g-0">
+                                <div class="col-md-4 d-flex justify-content-lg-end justify-content-md-start align-items-center">
+                                    <img src="./assets/Copy of IMG_20230224_000756_010.jpg"
+                                        class="img-fluid rounded-circle" alt="profile photo">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hi Mike</h5>
+                                        <p class="card-text text-muted">welcome back</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-1 p-3 rounded-4">
+                            <div class=" col-12">
+                                <strong>Today</strong>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 ">
+                                        <p class="card-title"><strong>$45363</strong></p>
+                                        <label class="text-muted">Account Balance</label>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6  col-sm-6 my-2">
+                                        <p class="fs-6"><strong>$45363</strong></p>
+                                        <label class="text-muted">Account Balance</label>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6  col-sm-6 my-2">
+                                        <p class="fs-6"><strong>$45363</strong></p>
+                                        <label class="text-muted">Account Balance</label>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 my-2">
+                                        <button type="button" class="btn btn-primary px-4 py-2">I want to</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                <strong>Recent Transaction</strong>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="text-muted">32-03-2003</p>
+                                        <strong>Widthdrawal transfer to bank : XX343</strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="text-muted">32-03-2003</p>
+                                        <strong>Widthdrawal transfer to bank : XX343</strong>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="text-muted">32-03-2003</p>
+                                        <strong>Widthdrawal transfer to bank : XX343</strong>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------ middle column ------------------------------------------>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="container">
+                        <div class="row m-3 my-5">
+                            <div class="col-12 middle">
+                                <p class="text">Retirment Income</p>
+                                <div class="fw-bold">Starting Year 2056</div>
+                            </div>
+                            <div class="col-12 row my-5 goal">
+                                <div class="col-lg-4 myGoal">
+                                    <figure>$34234</figure>
+                                    <p class="text-muted">My Goal</p>
+                                </div>
+                                <div class="col-lg-4 goalAchived">
+                                    <figure>59%</figure>
+                                    <p class="text-muted">Goal Achived</p>
+                                </div>
+                                <div class="col-lg-4 monthlyIncome">
+                                    <figure>$300</figure>
+                                    <p class="text-muted">Est. monthly Income</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 contribution">
+                                <p>Contribution Overtime</p>
+                                <div class="chart-container1">
+                                    <canvas id="barChart" width="400" height="250"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-12 row px-0 mx-0 my-3">
+                                <div class="col-12">
+                                    <p><strong>How do I compare my peers?</strong></p>
+                                    <p class="text-muted">these numbers represent current goal and achivements</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 my-3">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item p-1"><B>Age</B> : under 30</li>
+                                        <li class="list-group-item p-1"><b>Salary</b> :K 20 - K 30</li>
+                                        <li class="list-group-item p-1"><b>Gender</b> :Male</li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12 row my-3">
+                                    <div class="col-4 chart-container">
+                                        <canvas id="customDonutChart1" width="80" height="80"></canvas>
+                                    </div>
+                                    <div class="col-4 chart-container">
+                                        <canvas id="customDonutChart2" width="80" height="80"></canvas>
+                                    </div>
+                                    <div class="col-4 chart-container">
+                                        <canvas id="customDonutChart3" width="80" height="80"></canvas>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 p-4 pt-5">
+                    <div class="row p-3  rounded-3 right">
+                        <div class="col-12">
+                            <strong>Retirement Strategy</strong>
+                            <div class="slider-container m-3">
+                                <span class="text-muted">Employee Contribution</span>
+                                <input type="range" min="0" max="100" value="50" class="custom-slider w-75" id="rangeSlider1">
+                                <span class="slider-value m-2" id="sliderValue1">50%</span>
+                            </div>
+                            <div class="slider-container m-3 border-bottom pb-3">
+                                <span class="text-muted">Increment Range</span>
+                                <input type="range" min="0" max="100" value="75" class="custom-slider w-75" id="rangeSlider2">
+                                <span class="slider-value m-2" id="sliderValue2">75%</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6 px-4">
+                           <div class="d-flex justify-content-between my-3">
+                            <p>Employer Contribution</p>
+                            <strong>2.3%</strong>
+                           </div>
+                           <div class="d-flex justify-content-between my-3">
+                            <p>intrest rate</p>
+                            <strong>5%</strong>
+                           </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 col-sm-6">
+                            <button type="button" class="btn mybtn ">update</button>
+                        </div>
+                         <a href="#" class="text-center p-4"> View Help Doc > </a>
+
+                         <div class="col-12 end">
+                            <p>Are you considering a <b>Housing Advance?</b></p>
+                            <p class="text-muted">limited time reduced intrest</p>
+                            <a href="#"> Learn more > </a>
+                         </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./custom.js" async defer></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

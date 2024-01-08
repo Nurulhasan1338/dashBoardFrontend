@@ -4,20 +4,48 @@
     
 }
 
+.main{
+    /* width: 100%;
+    min-height: 100vh; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.balanceCard{
+    padding: 26px;
+    margin-block: 10px;
+    margin-bottom: 52px;
+
+}
+
+.main .sidenav{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 98vh;
+    position: absolute;
+    left: 0px;
+
+}
+.intro{
+    background-color: #efefef;
+    width: 88%;
+}
+#butterfly{
+    width: 70%;
+    padding-top: 10px;
+}
+
 p{
     margin-bottom: 0rem;
     font-family: inherit;
     font-weight: 400;
+ 
 }
-.sidenav{
-    width: 5%;
-    align-items: center;
-    justify-content: space-between;
-    height: 98vh;
-    position: fixed;
-    left: 15px;
 
-}
+
 .middle .text{
     color: rgb(133, 32, 216)
 }
@@ -85,12 +113,7 @@ figure {
 .middle .fw-bold{
     font-size: 33px;
 }
-.main{
-    width: 100%;
-    min-height: 100vh;
-    margin: 0px;
-    padding: 0px;
-}
+
 .dashboard{
     width: 100%;
 
@@ -113,16 +136,11 @@ ul{
     position: relative;
     top: -4px;
 }
-p{
-    margin-bottom: 0rem;
-}
-#butterfly{
-    width: 70%;
-    padding-top: 10px;
-}
+
+
 .card{
     border-style: none;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa00;
 }
 a{
     text-decoration: none;
@@ -141,3 +159,26 @@ a:hover{
 }
 
 
+
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+
+  }
+   */
+
+  /* Mobile view */
+  @media only screen and (max-width: 767px) {
+    .main .sidenav{
+       visibility: hidden;
+    }
+ 
+    #butterfly{
+       visibility: hidden;
+    }
+    .intro{
+        background-color: transparent;
+        width: 100%;
+    }
+
+  }
+  

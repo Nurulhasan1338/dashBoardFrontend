@@ -5,7 +5,6 @@ const data = [
     { label: '4', value1: 25, value2: 45, value3: 30 },
     { label: '5', value1: 25, value2: 45, value3: 30 },
     { label: '6', value1: 25, value2: 45, value3: 30 }
-    // Add more data here...
 ];
 
 
